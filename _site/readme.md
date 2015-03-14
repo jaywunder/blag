@@ -1,1 +1,2 @@
-this is my blag right now
+# blog
+Blog for gh-pages using jekyll
