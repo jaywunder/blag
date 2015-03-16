@@ -9,6 +9,6 @@ newline
 3
 is this thing on? 
 
-location of an image: {{ site.baseurl }}/assets/polar/animation.gif  
+location of an image: {{ site.baseurl }}assets/polar/animation.gif  
 
 ![a gif test]({{ site.baseurl }}/assets/polar/animation.gif)
