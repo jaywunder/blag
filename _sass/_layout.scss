@@ -1,175 +1,185 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+@charset "utf-8";
 
-    // Positioning context for the mobile navigation icon
+*{
+    margin: 0px;
+}
+
+body {
+    background: #34495e;
+}
+
+@font-face {
+    src: url("../assets/fonts/source-code-pro/SourceCodePro-Regular.ttf");
+    font-family: "source-code-pro";
+}
+
+@font-face {
+    src: url("../assets/fonts/ubuntu-mono/UbuntuMono-R.ttf");
+    font-family: "ubuntu-mono";
+}
+
+@font-face {
+    src: url("../assets/fonts/myriad-pro/MYRIADPRO-REGULAR.woff");
+    font-family: "myriad-pro";
+}
+
+h1 {
+    color: #7f8c8d;
+}
+h2 {
+    color: #7f8c8d;
+}
+h3 {
+    color: #7f8c8d;
+}
+
+a:link {
+    color: #7f8c8d;
+    text-decoration: none;
+    font-family: "ubuntu-mono";
+}
+
+a:visited {
+    color: #7f8c8d;
+    text-decoration: none;
+    font-family: "ubuntu-mono";
+}
+
+a:hover {
+    color: #7f8c8d;
+    text-decoration: underline;
+    font-family: "ubuntu-mono";
+}
+
+.wrapper {
+//    margin-left: 40px;
+//    margin-right: 40px;
+}
+
+/*******************
+ *  HEADER
+ */
+header {
     position: relative;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #10253A;
+    border-bottom: solid #898989 2px;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+.topLinks {
+    list-style-type: none;
+    white-space: nowrap;
+    display: inline-block;
     float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+    vertical-align: middle;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-left: 0px;
+}
+.topLink {
+    padding-left: 50px;
+    font-size: 42px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+.logoTop {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 0px;
 }
 
+#logoTopObject {
+    margin-left: 40px;
+}
 
-
-/**
- * Site footer
+/*******************
+ *  CONTENT
  */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+#content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #34495e;
+    text-align: center;
+    margin-bottom: 0;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+.innerContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #34495e;
+    text-align: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
+#mainCanvas {
+    width: 100%;
+    height: 100%;
+    background: #34495e;
+    margin: 0 0;
 }
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+.background {
+    z-index: -1;
 }
 
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+.foreground {
+    z-index: 1;
 }
 
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+.rssLogo {
+    max-height: 16px;
+    max-width: 16px;
+}
+/*******************
+ *  FOOTER
+ */
+footer {
+    text-align: center;
+    position: relative;
+    height: 50px;
+    background: #34495e;
+    padding: 20px;
+    font-family: "myriad-pro";
 }
 
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+#githubLogo {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 }
 
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+h1.footer {
+    color: #7f8c8d;
+    font-size: 26px;
+    font-family: "myriad-pro";
 }
 
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
+/*******************
+ * PAGE CONTENT
  */
 .page-content {
+    font-family: "myriad-pro";
     padding: $spacing-unit 0;
 }
 
 .page-heading {
+    font-family: "myriad-pro";
     font-size: 20px;
 }
 
 .post-list {
+    font-family: "myriad-pro";
     margin-left: 0;
     list-style: none;
 
@@ -179,28 +189,33 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-family: "myriad-pro";
+    font-size: $med-font-size;
     color: $grey-color;
 }
 
 .post-link {
+    font-family: "myriad-pro";
     display: block;
     font-size: 24px;
+    font-family: "myriad-pro";
 }
 
 
 
-/**
- * Posts
+/*******************
+ * POSTS
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    font-family: "myriad-pro";
 }
 
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    font-family: "myriad-pro";
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -209,9 +224,44 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-
+    
+    table {
+//        border: solid white 1px;
+        
+        th {
+            border-bottom: solid white 1px;
+            border-top: solid white 1px;
+        }
+        
+        tr {
+            border-bottom: solid white 1px;
+            border-top: solid white 1px;
+        }
+        
+        td {
+//            border-left: solid white 1px;
+        }
+    }
+    
+    .MathJax_Display, .MathJax_Preview, .MathJax {
+        font-size: $base-font-size;
+        font-family: "myriad-pro";
+        color: darken($grey-color-darkest, 20%);
+    }
+    
+    p, li, tr, th {
+        font-size: $base-font-size;
+        font-family: "myriad-pro";
+        color: $grey-color-darkest;
+    }
+    
+    li {
+        color: darken($grey-color-darkest, 10%);
+    }
+    
     h2 {
         font-size: 32px;
+        font-family: "myriad-pro";
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -220,6 +270,7 @@
 
     h3 {
         font-size: 26px;
+        font-family: "myriad-pro";
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -228,9 +279,18 @@
 
     h4 {
         font-size: 20px;
+        font-family: "myriad-pro";
 
         @include media-query($on-laptop) {
             font-size: 18px;
         }
     }
+}
+
+/*******************
+ * COMMENT SECTION
+ */
+
+.comment-count {
+  
 }
