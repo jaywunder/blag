@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Test Post
+comments: true
 ---
 
 this is a test post, I'd like you to ignore it, please. thank you.
@@ -14,6 +15,6 @@ newline
 3
 is this thing on?
 
-location of an image: {{ site.baseurl }}/assets/polar/animation.gif  
+location of an image: {{ site.url }}/assets/polar/animation.gif  
 
-![a gif test]({{ site.baseurl }}/assets/polar/animation.gif)
+![a gif test]({{ site.url }}/assets/polar/animation.gif)
