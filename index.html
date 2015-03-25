@@ -4,8 +4,11 @@ layout: default
 
 <div class="container">
 
-  <ul class="post-list">
-    <h1>Yeah, it's updating</h1>
+  <div class="page-header row">
+    <h2>Things that interest me:</h2>
+  </div>
+
+  <ul class="post-list row">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
