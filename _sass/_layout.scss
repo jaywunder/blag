@@ -11,9 +11,7 @@ footer {
     text-align: center;
     position: relative;
     height: 50px;
-    background: #34495e;
     padding: 20px;
-    font-family: "myriad-pro";
 }
 
 #githubLogo {
@@ -74,24 +72,6 @@ footer {
 
 .post-content {
     margin-bottom: $spacing-unit;
-
-    table {
-//        border: solid white 1px;
-
-        th {
-            border-bottom: solid white 1px;
-            border-top: solid white 1px;
-        }
-
-        tr {
-            border-bottom: solid white 1px;
-            border-top: solid white 1px;
-        }
-
-        td {
-//            border-left: solid white 1px;
-        }
-    }
 
     .MathJax_Display, .MathJax_Preview, .MathJax {
         font-size: $base-font-size;
